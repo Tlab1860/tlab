@@ -150,7 +150,6 @@ _nasa["cnv"] = wcs.cnv("1","10"); // 전환유형, 전환가치 설정해야함.
 	  
 	  	  <!--====== 상담 관련 시작 ======-->
 	  
-<!-- Channel Plugin Scripts -->
 <script>
   (function() {
     var w = window;
@@ -188,10 +187,16 @@ _nasa["cnv"] = wcs.cnv("1","10"); // 전환유형, 전환가치 설정해야함.
     }
   })();
   ChannelIO('boot', {
-    "pluginKey": "52a9f131-594d-4042-887b-eea0edea7008"
+    "pluginKey": "YOUR_PLUGIN_KEY", //please fill with your plugin key
+    "memberId": "YOUR_USER_ID", //fill with user id
+    "profile": {
+      "name": "YOUR_USER_NAME", //fill with user name
+      "mobileNumber": "YOUR_USER_MOBILE_NUMBER", //fill with user phone number
+      "CUSTOM_VALUE_1": "VALUE_1", //any other custom meta data
+      "CUSTOM_VALUE_2": "VALUE_2"
+    }
   });
-</script>
-<!-- End Channel Plugin -->	  
+</script>  
 	  
  <!--====== 상담 관련 끝 ======-->
 	  
