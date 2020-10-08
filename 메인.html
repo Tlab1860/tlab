@@ -34,50 +34,7 @@
         <h1 class="u-custom-font u-font-oswald u-hidden-lg u-hidden-xl u-text u-text-default u-text-white u-title u-text-1">
           <a class="u-btn u-button-style u-none u-btn-1" href="메인.html">Venture Station</a>
         </h1>
-	  
-	  <!-- Channel Plugin Scripts -->
-<script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
-      }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "YOUR_PLUGIN_KEY" //please fill with your plugin key
-  });
-</script>
-<!-- End Channel Plugin -->
-	  
+	
         <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="MD">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-shadow u-custom-top-bottom-menu-spacing u-nav-link u-text-active-custom-color-2 u-text-hover-grey-90 u-text-white" href="#" style="text-shadow: 33px 2px 8px rgba(0,0,0,0.4); padding: 4px 6px; font-size: calc(1em + 8px);">
@@ -194,6 +151,7 @@ _nasa["cnv"] = wcs.cnv("1","10"); // 전환유형, 전환가치 설정해야함.
 	  
 	  	  <!--====== 상담 관련 시작 ======-->
 	  
+<!-- Channel Plugin Scripts -->
 <script>
   (function() {
     var w = window;
@@ -231,16 +189,10 @@ _nasa["cnv"] = wcs.cnv("1","10"); // 전환유형, 전환가치 설정해야함.
     }
   })();
   ChannelIO('boot', {
-    "pluginKey": "YOUR_PLUGIN_KEY", //please fill with your plugin key
-    "memberId": "YOUR_USER_ID", //fill with user id
-    "profile": {
-      "name": "YOUR_USER_NAME", //fill with user name
-      "mobileNumber": "YOUR_USER_MOBILE_NUMBER", //fill with user phone number
-      "CUSTOM_VALUE_1": "VALUE_1", //any other custom meta data
-      "CUSTOM_VALUE_2": "VALUE_2"
-    }
+    "pluginKey": "52a9f131-594d-4042-887b-eea0edea7008"
   });
-</script>  
+</script>
+<!-- End Channel Plugin -->	  
 	  
  <!--====== 상담 관련 끝 ======-->
 	  
