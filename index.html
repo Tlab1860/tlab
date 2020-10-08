@@ -161,6 +161,53 @@ wcs_do(_nasa);
         </p>
       </div></footer>
 
+ <!--====== 상담 관련 시작 ======-->
+	  
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "52a9f131-594d-4042-887b-eea0edea7008"
+  });
+</script>
+<!-- End Channel Plugin -->	  
+	  
+ <!--====== 상담 관련 끝 ======-->					  
+	  
  <!--====== 네이버 프리미엄로그 관련 시작 ======-->				
 <!-- 전환페이지 설정 -->
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
